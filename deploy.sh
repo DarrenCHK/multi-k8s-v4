@@ -3,10 +3,11 @@ docker build -t dcattera/multi-server:latest -t dcattera/multi-server:$SHA -f ./
 docker build -t dcattera/multi-worker:latest -t dcattera/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push dcattera/multi-client:latest
-docker push dcattera/multi-client:$SHA
 docker push dcattera/multi-server:latest
-docker push dcattera/multi-server:$SHA
 docker push dcattera/multi-worker:latest
+
+docker push dcattera/multi-client:$SHA
+docker push dcattera/multi-server:$SHA
 docker push dcattera/multi-worker:$SHA
 
 kubectl apply -f k8s
