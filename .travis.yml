@@ -1,3 +1,5 @@
+#new notes to prompt a rebuild 190419
+
 sudo: required
 services: 
   - docker
