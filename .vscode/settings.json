@@ -1,0 +1,7 @@
+{
+    "markdown.preview.linkify": false,
+    "javascript.preferences.quoteStyle": "double",
+    "typescript.preferences.quoteStyle": "double",
+    "editor.autoClosingQuotes": "never",
+    "editor.autoSurround": "never"
+}
