@@ -15,9 +15,9 @@ spec:
       containers:
       - name: server
         image: dcattera/multi-server
+        ports:
+          - containerPort: 5000
         env:
-          - name: "PORT"
-            value: "3000"
           - name: REDIS_HOST
             value: redis-cluster-ip-service
           - name: REDIS_PORT

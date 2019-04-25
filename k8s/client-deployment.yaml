@@ -15,7 +15,6 @@ spec:
       containers:
       - name: client
         image: dcattera/multi-client
-        env:
-        - name: "PORT"
-          value: "3000"
+        ports:
+        - containerPort: 3000
           
