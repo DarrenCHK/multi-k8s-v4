@@ -1,6 +1,6 @@
-docker build --no-cache -t dcattera/multi-client:latest -t dcattera/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build --no-cache -t dcattera/multi-server:latest -t dcattera/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build --no-cache -t dcattera/multi-worker:latest -t dcattera/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t dcattera/multi-client:latest -t dcattera/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t dcattera/multi-server:latest -t dcattera/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t dcattera/multi-worker:latest -t dcattera/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push dcattera/multi-client:latest
 docker push dcattera/multi-server:latest
